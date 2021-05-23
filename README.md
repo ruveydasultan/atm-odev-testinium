@@ -1,5 +1,3 @@
-
-=======
 # atm-odev-testinium
 ATM ÖDEVİ
 
