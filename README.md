@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-"# atm-odev-testinium" 
+
 =======
 # atm-odev-testinium
 ATM ÖDEVİ
