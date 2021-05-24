@@ -29,7 +29,12 @@ public class BakiyeIslemleri {
             System.out.println("Yatırmak istediğiniz miktarı giriniz: ");
             float miktar = bakiyeGir(musteri);
             float bakiye = musteri.getHesapBakiyesi();
-            musteri.setHesapBakiyesi(bakiye + miktar);
+            if(miktar<0){
+                System.out.println("Lütfen pozitif bir değer giriniz.");
+            }else {
+                musteri.setHesapBakiyesi(bakiye + miktar);
+            }
+
             System.out.println("Güncel Bakiyeniz: " + musteri.getHesapBakiyesi());
     }
 
@@ -40,7 +45,10 @@ public class BakiyeIslemleri {
 
         if(miktar > bakiye){
             System.out.println("Yetersiz Bakiye.. \n İslem yapılamıyor.\n");
-        }else {
+        }else if (miktar<0){
+            System.out.println("Lütfen pozitif bir değer giriniz.");
+        }
+        else {
             musteri.setHesapBakiyesi(bakiye - miktar);
         }
         System.out.println("Güncel Bakiyeniz: " + musteri.getHesapBakiyesi());
