@@ -45,7 +45,7 @@ public class BakiyeIslemleri {
 
         if(miktar > bakiye){
             System.out.println("Yetersiz Bakiye.. \n İslem yapılamıyor.\n");
-        }else if (miktar<0){
+        }else if (miktar< 0){
             System.out.println("Lütfen pozitif bir değer giriniz.");
         }
         else {
